@@ -10,45 +10,44 @@ https://www.tooplate.com/view/2137-barista-cafe
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #8bcef4;
-  --secondary-color:              #a8e8fb;
-  --section-bg-color:             #7596a1;
-  --custom-btn-bg-color:          #3b91b0;
-  --custom-btn-bg-hover-color:    #3b4450;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #51b0e7;
+  --white-color: #ffffff;
+  --primary-color: #8bcef4;
+  --secondary-color: #a8e8fb;
+  --section-bg-color: #7596a1;
+  --custom-btn-bg-color: #3b91b0;
+  --custom-btn-bg-hover-color: #3b4450;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #51b0e7;
 
-  --body-font-family:             'Plus Jakarta Sans', sans-serif;
+  --body-font-family: 'Plus Jakarta Sans', sans-serif;
 
-  --h1-font-size:                 68px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  20px;
-  --btn-font-size:                16px;
-  --form-btn-font-size:           18px;
-  --menu-font-size:               16px;
+  --h1-font-size: 68px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --btn-font-size: 16px;
+  --form-btn-font-size: 18px;
+  --menu-font-size: 16px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-thin:             200;
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-bold:             700;
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -107,7 +106,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -127,7 +126,6 @@ b,
 strong {
   font-weight: var(--font-weight-bold);
 }
-
 
 /*---------------------------------------
   SECTION               
@@ -161,7 +159,6 @@ strong {
 .back-top-icon {
   font-size: var(--h2-font-size);
 }
-
 
 /*---------------------------------------
   TIMELINE               
@@ -213,7 +210,7 @@ strong {
 }
 
 .timeline-container-left::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 9px;
@@ -226,7 +223,7 @@ strong {
 }
 
 .timeline-container-right::before {
-  content: " ";
+  content: ' ';
   height: 0;
   position: absolute;
   top: 9px;
@@ -267,7 +264,8 @@ strong {
     border-color: transparent white transparent transparent;
   }
 
-  .timeline-container-left::after, .timeline-container-right::after {
+  .timeline-container-left::after,
+  .timeline-container-right::after {
     left: 6px;
   }
 
@@ -275,7 +273,6 @@ strong {
     left: 0%;
   }
 }
-
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -317,7 +314,6 @@ strong {
   font-style: italic;
 }
 
-
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
@@ -336,7 +332,7 @@ strong {
 }
 
 .navbar {
-  background: transparent;
+  background: var(--primary-color);
   z-index: 999999;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -385,14 +381,14 @@ strong {
   padding-bottom: 15px;
 }
 
-.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: var(--secondary-color);
 }
 
 .navbar .dropdown-menu {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 0;
   display: inherit;
   opacity: 0;
@@ -404,7 +400,7 @@ strong {
 }
 
 .navbar .dropdown-menu::before {
-  content: "";
+  content: '';
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -423,16 +419,16 @@ strong {
   position: relative;
 }
 
-.navbar .dropdown-item.active, 
+.navbar .dropdown-item.active,
 .navbar .dropdown-item:active,
-.navbar .dropdown-item:focus, 
+.navbar .dropdown-item:focus,
 .navbar .dropdown-item:hover {
   background: transparent;
   color: var(--link-hover-color);
 }
 
 .navbar .dropdown-toggle::after {
-  content: "\f282";
+  content: '\f282';
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-size: var(--menu-font-size);
@@ -441,7 +437,7 @@ strong {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  vertical-align: -.125em;
+  vertical-align: -0.125em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
@@ -472,23 +468,24 @@ strong {
   box-shadow: none;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   background: transparent;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
   transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
   transition: top 300ms 50ms ease, transform 300ms 350ms ease;
-  transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+  transition: top 300ms 50ms ease, transform 300ms 350ms ease,
+    -webkit-transform 300ms 350ms ease;
   top: 0;
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
   transform: rotate(45deg);
 }
 
-.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:after {
   transform: rotate(-45deg);
 }
 
@@ -505,7 +502,8 @@ strong {
 .navbar-toggler .navbar-toggler-icon:after {
   transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
   transition: top 300ms 350ms ease, transform 300ms 50ms ease;
-  transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+  transition: top 300ms 350ms ease, transform 300ms 50ms ease,
+    -webkit-transform 300ms 50ms ease;
   position: absolute;
   right: 0;
   left: 0;
@@ -523,22 +521,25 @@ strong {
   top: 8px;
 }
 
-
 /*---------------------------------------
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-color: var(--dark-color);
+  /* background-color: var(--section-bg-color); */
+  background-image: url('../images/img-drinks/img-drink-9.jpeg');
   position: relative;
   overflow: hidden;
-  min-height: 620px;
+  /* min-height: 620px; */
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
 }
 
 .hero-section::after {
   background-color: rgba(0, 0, 0, 0.65);
   border-radius: var(--border-radius-medium);
-  content: "";
+  content: '';
   position: absolute;
   top: 55%;
   left: 50%;
@@ -596,7 +597,6 @@ strong {
   margin: auto 15px 0 15px;
 }
 
-
 /*---------------------------------------
   ABOUT              
 -----------------------------------------*/
@@ -623,7 +623,11 @@ strong {
 }
 
 .about-video-info {
-  background-image: linear-gradient(to bottom, rgba(16, 16, 16, 0.35), rgb(37, 39, 42));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(16, 16, 16, 0.35),
+    rgb(37, 39, 42)
+  );
   border-radius: var(--border-radius-medium);
   bottom: 0;
   height: auto;
@@ -664,7 +668,11 @@ strong {
 }
 
 .team-block-info {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgb(3, 3, 3));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.35),
+    rgb(3, 3, 3)
+  );
   position: absolute;
   z-index: 1;
   top: 0;
@@ -680,12 +688,11 @@ strong {
   bottom: 1;
 }
 
-
 /*---------------------------------------
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url('../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
+  background-image: url('../images/img-place/img-place-1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -731,7 +738,7 @@ strong {
 }
 
 .badge::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -740,7 +747,6 @@ strong {
   border-bottom: 10px solid transparent;
   border-right: 10px solid var(--primary-color);
 }
-
 
 /*---------------------------------------
   REVIEWS              
@@ -761,7 +767,7 @@ strong {
 }
 
 .reviews-block-image-wrap {
-  background-image: url('../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
+  background-image: url('../images/img-drinks/img-drink-1.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -789,7 +795,6 @@ strong {
 .reviews-group i {
   color: var(--white-color);
 }
-
 
 /*---------------------------------------
   BOOKING SECTION              
@@ -839,12 +844,16 @@ strong {
   border-color: transparent;
 }
 
-
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
 .contact-section {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(188, 108, 37, 1)), url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.45),
+      rgba(188, 108, 37, 1)
+    ),
+    url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -893,7 +902,6 @@ strong {
   margin-bottom: 10px;
 }
 
-
 /*---------------------------------------
   CUSTOM FORM               
 -----------------------------------------*/
@@ -920,7 +928,7 @@ strong {
   margin-bottom: 15px;
 }
 
-.custom-form button[type="submit"] {
+.custom-form button[type='submit'] {
   background: var(--custom-btn-bg-color);
   border: none;
   border-radius: var(--border-radius-large);
@@ -931,8 +939,8 @@ strong {
   margin-bottom: 0;
 }
 
-.custom-form button[type="submit"]:hover,
-.custom-form button[type="submit"]:focus {
+.custom-form button[type='submit']:hover,
+.custom-form button[type='submit']:focus {
   background: var(--white-color);
   border-color: transparent;
   color: var(--primary-color);
@@ -950,7 +958,7 @@ strong {
 
 .custom-form input::-webkit-input-placeholder,
 .custom-form textarea::-webkit-input-placeholder {
-   color: var(--white-color);
+  color: var(--white-color);
 }
 
 .booking-form input:-moz-placeholder,
@@ -958,12 +966,11 @@ strong {
   color: var(--white-color);
 }
 
-
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--primary-color);
+  background-color: var(--custom-btn-bg-hover-color);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -995,9 +1002,8 @@ strong {
 }
 
 .copyright-text a {
-	color: rgba(255, 200, 160, 0.75);
+  color: rgba(255, 200, 160, 0.75);
 }
-
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -1035,7 +1041,6 @@ strong {
 .social-icon-link span {
   display: block;
 }
-
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1129,7 +1134,6 @@ strong {
   }
 }
 
-
 @media screen and (max-width: 578px) {
   .navbar .container,
   .sticky-wrapper.is-sticky .container {
@@ -1137,7 +1141,6 @@ strong {
     margin-left: 10px;
   }
 }
-
 
 @media screen and (max-width: 480px) {
   h1 {
@@ -1197,4 +1200,3 @@ strong {
     top: 13px;
   }
 }
-
